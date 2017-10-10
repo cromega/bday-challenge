@@ -1,0 +1,13 @@
+<% if flash[:error] %>
+  <div id="error">
+    <span><%= flash[:error] %></span>
+  </div>
+<% end %>
+
+<%= form_tag do %>
+  <p>
+    <%= label_tag :password, "Password: " %>
+    <%= password_field_tag "password", "", maxlength: 15 %>
+  </p>
+  <p><%= submit_tag "Log in" %></p>
+<% end %>

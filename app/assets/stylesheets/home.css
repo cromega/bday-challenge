@@ -1,0 +1,16 @@
+#lets-begin {
+  font-size: 400%;
+  color: #73AD21;
+  border: 8px dashed #73AD21;
+  border-radius: 25px;
+  padding: 15px;
+  cursor: pointer;
+	animation: 1s borders infinite linear;
+}
+
+@keyframes borders {
+  to {
+    outline-color: #69D2E7;
+    box-shadow: 0 0 0 20px #E0E4CC;
+  }
+}
